@@ -18,12 +18,13 @@ $external_id = rand(000, 999) . date('Ymd') . date('His');
   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="stylesheet" href="<?= base_url("/assets/css/form.css"); ?>">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
 </head>
 
-<body>
+<body class="d-flex flex-column">
 
- 
- 
+
+
 
 
 
@@ -45,7 +46,7 @@ $external_id = rand(000, 999) . date('Ymd') . date('His');
 
         </button>
         <div class="form-group">
-          <input type="text" id="email" name="email" class="email"  required>
+          <input type="text" id="email" name="email" class="email" required>
           <label for="email" class="emaillabel">Merchant Name </label>
         </div>
         <!-- <div class="form-group">
@@ -62,7 +63,7 @@ $external_id = rand(000, 999) . date('Ymd') . date('His');
           <label for="accountName">Account Name</label>
         </div> -->
 
-     
+
 
         <!-- <div class="form-group">
           <input type="text" id="billingPeriod" name="billingPeriod" class="form-control" style="cursor: not-allowed;"
@@ -126,24 +127,155 @@ $external_id = rand(000, 999) . date('Ymd') . date('His');
 
   </div>
 
+  <div class="carousel-wrap">
+    <div class="owl-carousel">
+      <div class="item">
+        <img src="/topup-form-qr/assets/images/logos/Digital Banks (DBS)/SENDER Only/GoTyme_Bank_2022.svg" />
+      </div>
+      <div class="item">
+        <img src="/topup-form-qr/assets/images/logos/Electronic Money Issuers (EMI) - Others/SENDER Only/bayad-partners.png" />
+      </div>
+      <div class="item">
+        <img src="/topup-form-qr/assets/images/logos/Electronic Money Issuers (EMI) - Others/SENDER Only/Banana Fintech Services.png" />
+      </div>
+      <div class="item">
+        <img src="/topup-form-qr/assets/images/logos/Electronic Money Issuers (EMI) - Others/SENDER-RECEIVER/DCPay Philippines, Inc..png" />
+      </div>
+      <div class="item">
+        <img src="/topup-form-qr/assets/images/logos/Electronic Money Issuers (EMI) - Others/SENDER-RECEIVER/Gcash.png" />
+      </div>
+      <div class="item">
+        <img src="/topup-form-qr/assets/images/logos/Electronic Money Issuers (EMI) - Others/SENDER-RECEIVER/GrabPay-header.jpg" />
+      </div>
+      <div class="item">
+        <img src="/topup-form-qr/assets/images/logos/Electronic Money Issuers (EMI) - Others/SENDER-RECEIVER/Maya_logo.svg.png" />
+      </div>
+      <div class="item">
+        <img src="/topup-form-qr/assets/images/logos/Electronic Money Issuers (EMI) - Others/SENDER-RECEIVER/PPS-PEPP Financial Services Corporation (PalawanPay).png" />
+      </div>
+      <div class="item">
+        <img src="/topup-form-qr/assets/images/logos/Electronic Money Issuers (EMI) - Others/SENDER-RECEIVER/ShopeePay Philippines, Inc..png" />
+      </div>
+      <div class="item">
+        <img src="/topup-form-qr/assets/images/logos/Electronic Money Issuers (EMI) - Others/SENDER-RECEIVER/SpeedyPay, Inc..png" />
+      </div>
+      <div class="item">
+        <img src="/topup-form-qr/assets/images/logos/Electronic Money Issuers (EMI) - Others/SENDER-RECEIVER/TayoCash, Inc..png" />
+      </div>
+      <div class="item">
+        <img src="/topup-form-qr/assets/images/logos/Electronic Money Issuers (EMI) - Others/SENDER-RECEIVER/Traxion Pay, Inc..png" />
+      </div>
+      <div class="item">
+        <img src="/topup-form-qr/assets/images/logos/Electronic Money Issuers (EMI) - Others/SENDER-RECEIVER/USSC Money Services, Inc..jpg" />
+      </div>
+      <div class="item">
+        <img src="/topup-form-qr/assets/images/logos/Electronic Money Issuers (EMI) - Others/SENDER-RECEIVER/Zybi Tech, Inc..png" />
+      </div>
+      <div class="item">
+        <img src="/topup-form-qr/assets/images/logos/Electronic Money Issuers (EMI) - Others/SENDER-RECEIVER/Starpay-logo.jpg" />
+      </div>
+      <div class="item">
+        <img src="/topup-form-qr/assets/images/logos/Rural Banks (RBS)/SENDER Only/seabankph_logo.jpg" />
+      </div>
+      <div class="item">
+        <img src="/topup-form-qr/assets/images/logos/Rural Banks (RBS)/SENDER-RECEIVER/Cebuana Lhuillier Rural Bank, Inc..png" />
+      </div>
+      <div class="item">
+        <img src="/topup-form-qr/assets/images/logos/Rural Banks (RBS)/SENDER-RECEIVER/Netbank (A Rural Bank), Inc..png" />
+      </div>
+      <div class="item">
+        <img src="/topup-form-qr/assets/images/logos/Rural Banks (RBS)/SENDER-RECEIVER/Rural Bank of Guinobatan, Inc..png" />
+      </div>
+      <div class="item">
+        <img src="/topup-form-qr/assets/images/logos/Thrift Banks (TBS)/SENDER Only/Philippines Savings Bank.png" />
+      </div>
+      <div class="item">
+        <img src="/topup-form-qr/assets/images/logos/Thrift Banks (TBS)/SENDER-RECEIVER/AllBank (A Thrift Bank), Inc..png" />
+      </div>
+      <div class="item">
+        <img src="/topup-form-qr/assets/images/logos/Thrift Banks (TBS)/SENDER-RECEIVER/Card SME Bank Inc., A Thrift Ba.png" />
+      </div>
+      <div class="item">
+        <img src="/topup-form-qr/assets/images/logos/Thrift Banks (TBS)/SENDER-RECEIVER/Queen City Development Bank, Inc. or Queenbank, A Thrift Bank.png" />
+      </div>
+      <div class="item">
+        <img src="/topup-form-qr/assets/images/logos/Thrift Banks (TBS)/SENDER-RECEIVER/Sterling Bank of Asia, Inc. (A Savings Bank).png" />
+      </div>
+      <div class="item">
+        <img src="/topup-form-qr/assets/images/logos/Universal and Commercial Banks (UKBs)/SENDER Only/Bank of Commerce.png" />
+      </div>
+      <div class="item">
+        <img src="/topup-form-qr/assets/images/logos/Universal and Commercial Banks (UKBs)/SENDER Only/Chinabank-Logo.jpg" />
+      </div>
+      <div class="item">
+        <img src="/topup-form-qr/assets/images/logos/Universal and Commercial Banks (UKBs)/SENDER Only/Land Bank of the Philippines.svg" />
+      </div>
+      <div class="item">
+        <img src="/topup-form-qr/assets/images/logos/Universal and Commercial Banks (UKBs)/SENDER-RECEIVER/Asia United Bank Corporation.png" />
+      </div>
+      <div class="item">
+        <img src="/topup-form-qr/assets/images/logos/Universal and Commercial Banks (UKBs)/SENDER-RECEIVER/Bank of the Philippine Islands.jpg" />
+      </div>
+      <div class="item">
+        <img src="/topup-form-qr/assets/images/logos/Universal and Commercial Banks (UKBs)/SENDER-RECEIVER/BDO Unibank, Inc..png" />
+      </div>
+      <div class="item">
+        <img src="/topup-form-qr/assets/images/logos/Universal and Commercial Banks (UKBs)/SENDER-RECEIVER/Metropolitan Bank and Trust Company.png" />
+      </div>
+      <div class="item">
+        <img src="/topup-form-qr/assets/images/logos/Universal and Commercial Banks (UKBs)/SENDER-RECEIVER/Philippine_National_Bank_logo.png" />
+      </div>
+      <div class="item">
+        <img src="/topup-form-qr/assets/images/logos/Universal and Commercial Banks (UKBs)/SENDER-RECEIVER/RCBC_logo.svg.png" />
+      </div>
+      <div class="item">
+        <img src="/topup-form-qr/assets/images/logos/Universal and Commercial Banks (UKBs)/SENDER-RECEIVER/Robinsons Bank Corporation.png" />
+      </div>
+      <div class="item">
+        <img src="/topup-form-qr/assets/images/logos/Universal and Commercial Banks (UKBs)/SENDER-RECEIVER/The_Security_Bank_Logo_1.svg.png" />
+      </div>
+      <div class="item">
+        <img src="/topup-form-qr/assets/images/logos/Universal and Commercial Banks (UKBs)/SENDER-RECEIVER/UnionBank_PH_logo.svg.png" />
+      </div>
+    </div>
+  </div>
 
-
-  </div>
-  </div>
-  </div>
-  </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-
-
-
-
+  
+  
+  
+  
+  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script>
+    $(".owl-carousel").owlCarousel({
+      loop: true,
+      // margin: 10,
+      nav: true,
+      navText: [
+        "<i class='fa fa-caret-left'></i>",
+        "<i class='fa fa-caret-right'></i>",
+      ],
+      autoplay: true,
+      autoplayHoverPause: false,
+      responsive: {
+        0: {
+          items: 1,
+        },
+        600: {
+          items: 3,
+        },
+        1000: {
+          items: 5,
+        },
+      },
+    });
+
     function changeLanguage(selectElement) {
       var selectedLanguage = selectElement.value;
       var messageElement = document.querySelector('.pop h4');
@@ -179,7 +311,7 @@ $external_id = rand(000, 999) . date('Ymd') . date('His');
     });
   </script>
   <script>
-   
+
 
 
   </script>
