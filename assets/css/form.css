@@ -16,7 +16,7 @@ body {
   min-width: 100vw;
   /* background-color: #555; */
   background: url('/assets/images/finalbackground.jpg') no-repeat center center fixed;
-  background-size: contain;
+  background-size: cover;
   overflow-x: hidden;
 }
 

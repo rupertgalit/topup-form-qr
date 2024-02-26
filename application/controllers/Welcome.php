@@ -52,9 +52,20 @@ class Welcome extends CI_Controller
 		// 	'qr' => '123123',
 		// 	'TotalAmtTxn' => 23
 		// ); 
+
+		if (empty($qrdata['records'])) {
+
+			redirect(base_url());
+			exit();
+
+		}
+		else{
+
+			$this->qr_data($qrdata);
+		}
 		
 		 
-		$this->qr_data($qrdata);
+		
 	
 		
 	}

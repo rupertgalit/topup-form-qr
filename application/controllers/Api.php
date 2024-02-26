@@ -406,6 +406,8 @@ class Api extends REST_Controller
             ]
         ];
 
+     
+
         $response = $this->apiService->generate_qr_api($jayParsedAry);
 
         //    $response = $this->generate_qr_api( $jayParsedAry );

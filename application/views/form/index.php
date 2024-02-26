@@ -20,6 +20,28 @@ $external_id = rand(000, 999) . date('Ymd') . date('His');
   <link rel="stylesheet" href="<?= base_url("/assets/css/form.css"); ?>">
 </head>
 
+<style>
+
+.payment-form{
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(142,158,171,0.5047268907563025) 0%);
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+
+}
+
+.button-style{
+  background: #00d2ff;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #3a7bd5, #00d2ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.drinkcard-cc{
+  border-color:#d9d9d9!important;
+  color: #d9d9d9 !important;
+}
+</style>
+
 <body>
 
  
@@ -28,7 +50,7 @@ $external_id = rand(000, 999) . date('Ymd') . date('His');
 
 
   <div class="container mt-5 d-flex justify-content-center">
-    <div class="payment-form bg-white p-4 rounded shadow-sm mx-auto" style=" transform: scale(0.85)!important;">
+    <div class="payment-form p-4 rounded shadow-sm mx-auto" style=" transform: scale(0.85)!important;">
       <h4 class="font-weight-bold text-center mb-4">PAYMENT TOPUP</h4>
       <div id="Message" class="text-danger text-center mt-2 hold-transition  animate__animated animate__zoomIn animate__faster text-bold" style="display: none; font-size: 15px;margin-top:-1.5rem!important;"></div>
       <form action="#" method="post" id="myForm" autocomplete="off">
@@ -118,7 +140,7 @@ $external_id = rand(000, 999) . date('Ymd') . date('His');
           <div class="form-group">
             <!-- <button type="submit" value="Submit" class="btn btn-primary text-center"> SUBMIT</button> -->
 
-            <input type="submit" value="Pay" class="btn btn-primary text-center" style="margin-bottom:-50px; margin-top:-25px;">
+            <input type="submit" value="Pay" class="btn button-style text-center" style="margin-bottom:-50px; margin-top:-25px;">
           </div>
 
         </div>
