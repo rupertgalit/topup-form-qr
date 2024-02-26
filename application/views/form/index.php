@@ -21,7 +21,15 @@ $external_id = rand(000, 999) . date('Ymd') . date('His');
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
 </head>
 
+
+
+
+
 <style>
+  body{
+    overflow-x: hidden; /*hides horizontal scrollbar*/
+    overflow-y: hidden; /*hides vertical scrollbar*/
+  }
 
 .payment-form{
   background: rgb(2,0,36);
@@ -41,34 +49,20 @@ background: linear-gradient(to right, #3a7bd5, #00d2ff); /* W3C, IE 10+/ Edge, F
   border-color:#d9d9d9!important;
   color: #d9d9d9 !important;
 }
-</style>
 
-<style>
-
-.payment-form{
-  background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(142,158,171,0.5047268907563025) 0%);
-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-
-
-}
-
-.button-style{
-  background: #00d2ff;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #3a7bd5, #00d2ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-}
-.drinkcard-cc{
-  border-color:#d9d9d9!important;
-  color: #d9d9d9 !important;
+.header{
+  /* height: 100px; */
+  /* margin-bottom: 100px; */
 }
 </style>
 
 <body class="d-flex flex-column">
 
 
+  <div class="header">
+<br><br><br><br><br><br><br>
 
+  </div>
 
 
 
@@ -174,112 +168,112 @@ background: linear-gradient(to right, #3a7bd5, #00d2ff); /* W3C, IE 10+/ Edge, F
   <div class="carousel-wrap">
     <div class="owl-carousel">
       <div class="item">
-        <img src="/topup-form-qr/assets/images/logos/Digital Banks (DBS)/SENDER Only/GoTyme_Bank_2022.svg" />
+        <img src="assets/images/logos/Digital Banks (DBS)/SENDER Only/GoTyme_Bank_2022.svg" />
       </div>
       <div class="item">
-        <img src="/topup-form-qr/assets/images/logos/Electronic Money Issuers (EMI) - Others/SENDER Only/bayad-partners.png" />
+        <img src="assets/images/logos/Electronic Money Issuers (EMI) - Others/SENDER Only/bayad-partners.png" />
       </div>
       <div class="item">
-        <img src="/topup-form-qr/assets/images/logos/Electronic Money Issuers (EMI) - Others/SENDER Only/Banana Fintech Services.png" />
+        <img src="assets/images/logos/Electronic Money Issuers (EMI) - Others/SENDER Only/Banana Fintech Services.png" />
       </div>
       <div class="item">
-        <img src="/topup-form-qr/assets/images/logos/Electronic Money Issuers (EMI) - Others/SENDER-RECEIVER/DCPay Philippines, Inc..png" />
+        <img src="assets/images/logos/Electronic Money Issuers (EMI) - Others/SENDER-RECEIVER/DCPay Philippines, Inc..png" />
       </div>
       <div class="item">
-        <img src="/topup-form-qr/assets/images/logos/Electronic Money Issuers (EMI) - Others/SENDER-RECEIVER/Gcash.png" />
+        <img src="assets/images/logos/Electronic Money Issuers (EMI) - Others/SENDER-RECEIVER/Gcash.png" />
       </div>
       <div class="item">
-        <img src="/topup-form-qr/assets/images/logos/Electronic Money Issuers (EMI) - Others/SENDER-RECEIVER/GrabPay-header.jpg" />
+        <img src="assets/images/logos/Electronic Money Issuers (EMI) - Others/SENDER-RECEIVER/GrabPay-header.jpg" />
       </div>
       <div class="item">
-        <img src="/topup-form-qr/assets/images/logos/Electronic Money Issuers (EMI) - Others/SENDER-RECEIVER/Maya_logo.svg.png" />
+        <img src="assets/images/logos/Electronic Money Issuers (EMI) - Others/SENDER-RECEIVER/Maya_logo.svg.png" />
       </div>
       <div class="item">
-        <img src="/topup-form-qr/assets/images/logos/Electronic Money Issuers (EMI) - Others/SENDER-RECEIVER/PPS-PEPP Financial Services Corporation (PalawanPay).png" />
+        <img src="assets/images/logos/Electronic Money Issuers (EMI) - Others/SENDER-RECEIVER/PPS-PEPP Financial Services Corporation (PalawanPay).png" />
       </div>
       <div class="item">
-        <img src="/topup-form-qr/assets/images/logos/Electronic Money Issuers (EMI) - Others/SENDER-RECEIVER/ShopeePay Philippines, Inc..png" />
+        <img src="assets/images/logos/Electronic Money Issuers (EMI) - Others/SENDER-RECEIVER/ShopeePay Philippines, Inc..png" />
       </div>
       <div class="item">
-        <img src="/topup-form-qr/assets/images/logos/Electronic Money Issuers (EMI) - Others/SENDER-RECEIVER/SpeedyPay, Inc..png" />
+        <img src="assets/images/logos/Electronic Money Issuers (EMI) - Others/SENDER-RECEIVER/SpeedyPay, Inc..png" />
       </div>
       <div class="item">
-        <img src="/topup-form-qr/assets/images/logos/Electronic Money Issuers (EMI) - Others/SENDER-RECEIVER/TayoCash, Inc..png" />
+        <img src="assets/images/logos/Electronic Money Issuers (EMI) - Others/SENDER-RECEIVER/TayoCash, Inc..png" />
       </div>
       <div class="item">
-        <img src="/topup-form-qr/assets/images/logos/Electronic Money Issuers (EMI) - Others/SENDER-RECEIVER/Traxion Pay, Inc..png" />
+        <img src="assets/images/logos/Electronic Money Issuers (EMI) - Others/SENDER-RECEIVER/Traxion Pay, Inc..png" />
       </div>
       <div class="item">
-        <img src="/topup-form-qr/assets/images/logos/Electronic Money Issuers (EMI) - Others/SENDER-RECEIVER/USSC Money Services, Inc..jpg" />
+        <img src="assets/images/logos/Electronic Money Issuers (EMI) - Others/SENDER-RECEIVER/USSC Money Services, Inc..jpg" />
       </div>
       <div class="item">
-        <img src="/topup-form-qr/assets/images/logos/Electronic Money Issuers (EMI) - Others/SENDER-RECEIVER/Zybi Tech, Inc..png" />
+        <img src="assets/images/logos/Electronic Money Issuers (EMI) - Others/SENDER-RECEIVER/Zybi Tech, Inc..png" />
       </div>
       <div class="item">
-        <img src="/topup-form-qr/assets/images/logos/Electronic Money Issuers (EMI) - Others/SENDER-RECEIVER/Starpay-logo.jpg" />
+        <img src="assets/images/logos/Electronic Money Issuers (EMI) - Others/SENDER-RECEIVER/Starpay-logo.jpg" />
       </div>
       <div class="item">
-        <img src="/topup-form-qr/assets/images/logos/Rural Banks (RBS)/SENDER Only/seabankph_logo.jpg" />
+        <img src="assets/images/logos/Rural Banks (RBS)/SENDER Only/seabankph_logo.jpg" />
       </div>
       <div class="item">
-        <img src="/topup-form-qr/assets/images/logos/Rural Banks (RBS)/SENDER-RECEIVER/Cebuana Lhuillier Rural Bank, Inc..png" />
+        <img src="assets/images/logos/Rural Banks (RBS)/SENDER-RECEIVER/Cebuana Lhuillier Rural Bank, Inc..png" />
       </div>
       <div class="item">
-        <img src="/topup-form-qr/assets/images/logos/Rural Banks (RBS)/SENDER-RECEIVER/Netbank (A Rural Bank), Inc..png" />
+        <img src="assets/images/logos/Rural Banks (RBS)/SENDER-RECEIVER/Netbank (A Rural Bank), Inc..png" />
       </div>
       <div class="item">
-        <img src="/topup-form-qr/assets/images/logos/Rural Banks (RBS)/SENDER-RECEIVER/Rural Bank of Guinobatan, Inc..png" />
+        <img src="assets/images/logos/Rural Banks (RBS)/SENDER-RECEIVER/Rural Bank of Guinobatan, Inc..png" />
       </div>
       <div class="item">
-        <img src="/topup-form-qr/assets/images/logos/Thrift Banks (TBS)/SENDER Only/Philippines Savings Bank.png" />
+        <img src="assets/images/logos/Thrift Banks (TBS)/SENDER Only/Philippines Savings Bank.png" />
       </div>
       <div class="item">
-        <img src="/topup-form-qr/assets/images/logos/Thrift Banks (TBS)/SENDER-RECEIVER/AllBank (A Thrift Bank), Inc..png" />
+        <img src="assets/images/logos/Thrift Banks (TBS)/SENDER-RECEIVER/AllBank (A Thrift Bank), Inc..png" />
       </div>
       <div class="item">
-        <img src="/topup-form-qr/assets/images/logos/Thrift Banks (TBS)/SENDER-RECEIVER/Card SME Bank Inc., A Thrift Ba.png" />
+        <img src="assets/images/logos/Thrift Banks (TBS)/SENDER-RECEIVER/Card SME Bank Inc., A Thrift Ba.png" />
       </div>
       <div class="item">
-        <img src="/topup-form-qr/assets/images/logos/Thrift Banks (TBS)/SENDER-RECEIVER/Queen City Development Bank, Inc. or Queenbank, A Thrift Bank.png" />
+        <img src="assets/images/logos/Thrift Banks (TBS)/SENDER-RECEIVER/Queen City Development Bank, Inc. or Queenbank, A Thrift Bank.png" />
       </div>
       <div class="item">
-        <img src="/topup-form-qr/assets/images/logos/Thrift Banks (TBS)/SENDER-RECEIVER/Sterling Bank of Asia, Inc. (A Savings Bank).png" />
+        <img src="assets/images/logos/Thrift Banks (TBS)/SENDER-RECEIVER/Sterling Bank of Asia, Inc. (A Savings Bank).png" />
       </div>
       <div class="item">
-        <img src="/topup-form-qr/assets/images/logos/Universal and Commercial Banks (UKBs)/SENDER Only/Bank of Commerce.png" />
+        <img src="assets/images/logos/Universal and Commercial Banks (UKBs)/SENDER Only/Bank of Commerce.png" />
       </div>
       <div class="item">
-        <img src="/topup-form-qr/assets/images/logos/Universal and Commercial Banks (UKBs)/SENDER Only/Chinabank-Logo.jpg" />
+        <img src="assets/images/logos/Universal and Commercial Banks (UKBs)/SENDER Only/Chinabank-Logo.jpg" />
       </div>
       <div class="item">
-        <img src="/topup-form-qr/assets/images/logos/Universal and Commercial Banks (UKBs)/SENDER Only/Land Bank of the Philippines.svg" />
+        <img src="assets/images/logos/Universal and Commercial Banks (UKBs)/SENDER Only/Land Bank of the Philippines.svg" />
       </div>
       <div class="item">
-        <img src="/topup-form-qr/assets/images/logos/Universal and Commercial Banks (UKBs)/SENDER-RECEIVER/Asia United Bank Corporation.png" />
+        <img src="assets/images/logos/Universal and Commercial Banks (UKBs)/SENDER-RECEIVER/Asia United Bank Corporation.png" />
       </div>
       <div class="item">
-        <img src="/topup-form-qr/assets/images/logos/Universal and Commercial Banks (UKBs)/SENDER-RECEIVER/Bank of the Philippine Islands.jpg" />
+        <img src="assets/images/logos/Universal and Commercial Banks (UKBs)/SENDER-RECEIVER/Bank of the Philippine Islands.jpg" />
       </div>
       <div class="item">
-        <img src="/topup-form-qr/assets/images/logos/Universal and Commercial Banks (UKBs)/SENDER-RECEIVER/BDO Unibank, Inc..png" />
+        <img src="assets/images/logos/Universal and Commercial Banks (UKBs)/SENDER-RECEIVER/BDO Unibank, Inc..png" />
       </div>
       <div class="item">
-        <img src="/topup-form-qr/assets/images/logos/Universal and Commercial Banks (UKBs)/SENDER-RECEIVER/Metropolitan Bank and Trust Company.png" />
+        <img src="assets/images/logos/Universal and Commercial Banks (UKBs)/SENDER-RECEIVER/Metropolitan Bank and Trust Company.png" />
       </div>
       <div class="item">
-        <img src="/topup-form-qr/assets/images/logos/Universal and Commercial Banks (UKBs)/SENDER-RECEIVER/Philippine_National_Bank_logo.png" />
+        <img src="assets/images/logos/Universal and Commercial Banks (UKBs)/SENDER-RECEIVER/Philippine_National_Bank_logo.png" />
       </div>
       <div class="item">
-        <img src="/topup-form-qr/assets/images/logos/Universal and Commercial Banks (UKBs)/SENDER-RECEIVER/RCBC_logo.svg.png" />
+        <img src="assets/images/logos/Universal and Commercial Banks (UKBs)/SENDER-RECEIVER/RCBC_logo.svg.png" />
       </div>
       <div class="item">
-        <img src="/topup-form-qr/assets/images/logos/Universal and Commercial Banks (UKBs)/SENDER-RECEIVER/Robinsons Bank Corporation.png" />
+        <img src="assets/images/logos/Universal and Commercial Banks (UKBs)/SENDER-RECEIVER/Robinsons Bank Corporation.png" />
       </div>
       <div class="item">
-        <img src="/topup-form-qr/assets/images/logos/Universal and Commercial Banks (UKBs)/SENDER-RECEIVER/The_Security_Bank_Logo_1.svg.png" />
+        <img src="assets/images/logos/Universal and Commercial Banks (UKBs)/SENDER-RECEIVER/The_Security_Bank_Logo_1.svg.png" />
       </div>
       <div class="item">
-        <img src="/topup-form-qr/assets/images/logos/Universal and Commercial Banks (UKBs)/SENDER-RECEIVER/UnionBank_PH_logo.svg.png" />
+        <img src="assets/images/logos/Universal and Commercial Banks (UKBs)/SENDER-RECEIVER/UnionBank_PH_logo.svg.png" />
       </div>
     </div>
   </div>
