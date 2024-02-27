@@ -3,7 +3,8 @@
 
         // $qr = $records['qr'];
         $qr = "00020101021128840015ph.ppmi.p2micro0111RUGUPHM1XXX032500173110400000000000000010410001010503905030005204731153036085802PH5913Merchant Name6009Test City62790012ph.ppmi.qrph021263912345678905246391234567896391234567890708PTR102670803***88440012ph.ppmi.qrph012403081020231708944184107363046730";
-        $ref_num = $records['ReferenceNo'];
+        $ref_num = rand(000, 999) . date('Ymd') . date('His');
+        // $ref_num = $records['ReferenceNo'];
         // $originalNumber = $records['TotalAmount'];
         // $amount = number_format($originalNumber, 2, '.', ',');
 

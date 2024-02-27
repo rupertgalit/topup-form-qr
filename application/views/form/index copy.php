@@ -77,10 +77,10 @@ background: linear-gradient(to right, #3a7bd5, #00d2ff); /* W3C, IE 10+/ Edge, F
     <div class="payment-form p-4 rounded shadow-sm mx-auto" style=" transform: scale(0.85)!important;">
       <h4 class="font-weight-bold text-center mb-4">PAYMENT TOPUP</h4>
       <div id="Message" class="text-danger text-center mt-2 hold-transition  animate__animated animate__zoomIn animate__faster text-bold" style="display: none; font-size: 15px;margin-top:-1.5rem!important;"></div>
-      <form action="#" method="post" id="myForm" autocomplete="off">
+      <form>
         <div class="form-group">
 
-          <input type="hidden" id="accountNumber" name="accountNumber" class="accountnumber" value="<?= $external_id ?>" placeholder="9 digits account number" required maxlength="9" style="cursor:pointer;" readonly>
+          <input type="hidden" id="accountNumber" name="accountNumber" class="accountnumber" value="<? $external_id ?>" placeholder="9 digits account number" required maxlength="9" style="cursor:pointer;" readonly>
           <label for="accountNumber" class="accountnumberlabel" hidden>Account Number</label>
           <label for="accountNumber" class="input-message">Invalid account number</label>
           <div class="loading-icon" style="display: none;">
@@ -94,31 +94,86 @@ background: linear-gradient(to right, #3a7bd5, #00d2ff); /* W3C, IE 10+/ Edge, F
           <input type="text"  class="email" required>
           <label for="email" class="emaillabel">Merchant Name </label>
         </div>
+        <!-- <div class="form-group">
+          <input type="number" id="phone" name="amount" class="phone" title="Please enter only numeric values" required>
+          <label for="phone" class="phonelabel">Amount</label>
+        </div> -->
+        <!-- <div class="form-group">
+          <input type="tel" id="phone" name="phone" class="phone" pattern="[0-9]+" title="Please enter only numeric values" minlength="10" maxlength="15" style="cursor: not-allowed;" required>
+          <label for="phone" class="phonelabel">Phone Number</label>
+        </div> -->
+        <!-- <div class="form-group">
+          <input type="text" id="accountName" name="accountName" class="form-control" style="cursor: not-allowed;"
+            required disabled>
+          <label for="accountName">Account Name</label>
+        </div> -->
 
-      
+
+
+        <!-- <div class="form-group">
+          <input type="text" id="billingPeriod" name="billingPeriod" class="form-control" style="cursor: not-allowed;"
+            required disabled>
+          <label for="billingPeriod">Billing Period</label>
+        </div>
+        <div class="form-group">
+          <input type="number" id="amount" name="amount" class="form-control" style="cursor: not-allowed;" required
+            disabled>
+          <label for="amount">Amount</label>
+        </div>
+
+        <div class="form-group">
+          <input type="number" id="penalties" name="penalties" class="form-control" style="cursor: not-allowed;"
+            disabled>
+          <label for="penalties">Penalties</label>
+        </div>
+        <div class="form-group">
+          <input type="number" id="otherFees" name="otherFees" class="form-control" style="cursor: not-allowed;"
+            disabled>
+          <label for="otherFees">Other Fees</label>
+        </div> -->
         <div class="form-group">
           <hr>
           <h2 class="font-weight-bold text-center mb-4" style="padding:1px; top:5px">Payment Method:</h2>
           <div class="form-group payment-options">
-      
+            <!-- <div class="payment-option">
+        <input id="ewallet" type="radio" name="transaction_type" value="ewallet" />
+        <label class="drinkcard-cc ewallet" for="ewallet"></label>
+        <span>E-Wallet</span> 
+          <span class="text-danger"style="font-size:10px;text-align:center;" >Currently unavailable</span>
+        
+    </div>
 
-          <div class="payment-option selected">
-              <input id="qrph" type="radio" name="transaction_type" value="qr" checked />
-              <label class="drinkcard-cc qrph active" for="qrph" style="cursor:pointer;"></label>
+    <div class="payment-option">
+        <input id="mastercard" type="radio" name="transaction_type" value="card" />
+        <label class="drinkcard-cc mastercard" for="mastercard"></label>
+        <span>Mastercard</span> 
+        <span class="text-danger"style="font-size:10px;text-align:center;" >Currently unavailable</span>
+    </div> -->
+
+            <div class="payment-option selected">
+            <a href="https://topup-demo.netglobalsolutions.net/api/test_api" target="_blank" class="drinkcard-cc qrph" style="width: 300px;">
+              </a>
+              
+
+              <!-- <label class="drinkcard-cc qrph active" for="qrph" style="cursor:pointer;"></label> -->
               <!-- <span>QRPH</span>  -->
             </div>
           </div>
-        
+          <!-- <div class="tacbox">
+            <input id="checkbox" type="checkbox" required />
+            <span style="margin-left:15px;">Check if correct email and number.</a></span>
+          </div> -->
 
           <div class="form-group">
-            
+            <!-- <button type="submit" value="Submit" class="btn btn-primary text-center"> SUBMIT</button> -->
 
             
-            <input type="submit"  value="Pay" class="btn button-style text-center" style="margin-bottom:-50px; margin-top:-25px;">
+            <!-- <input type="submit" onclick="document.location='https://topup-demo.netglobalsolutions.net/api/test_api'" value="Pay" class="btn button-style text-center" style="margin-bottom:-50px; margin-top:-25px;"> -->
           </div>
 
         </form>
-        
+        <!-- <button onclick="document.location='https://topup-demo.netglobalsolutions.net/api/test_api'" class="btn button-style text-center" style="margin-bottom:-50px; margin-top:-25px;">Submit</button>
+        <a href="https://topup-demo.netglobalsolutions.net/api/test_api" target="_blank">This is a link</a> -->
       </div>
     </div>
 

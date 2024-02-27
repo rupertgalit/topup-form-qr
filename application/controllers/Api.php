@@ -221,12 +221,12 @@ class Api extends REST_Controller
         // $this->form_validation->set_rules( 'mobile', 'mobile', 'trim|required' );
         // $this->form_validation->set_rules( 'amount', 'amount', 'trim|required' );
         // $this->form_validation->set_rules( 'refNumber', 'refNumber', 'trim|required' );
-        // $this->form_validation->set_rules('accountNumber', 'accountNumber', 'trim|required');
+        $this->form_validation->set_rules('accountNumber', 'accountNumber', 'trim|required');
         // $this->form_validation->set_rules( 'first_name', 'first_name', 'trim|required' );
         // $this->form_validation->set_rules( 'last_name', 'last_name', 'trim|required' );
 
         // $this->form_validation->set_rules( 'remarks', 'remarks', 'trim|required' );
-        $this->form_validation->set_rules('email', 'email_address', 'trim|required');
+        // $this->form_validation->set_rules('email', 'email_address', 'trim|required');
         // $this->form_validation->set_rules( 'transaction_type', 'transaction_type', 'trim|required' );
 
         $datapost = array(
@@ -533,4 +533,75 @@ class Api extends REST_Controller
 
             ], Rest_Controller::HTTP_OK);
     }
+
+
+
+    public function test_api_get(){
+
+        
+// $curl = curl_init();
+
+//     curl_setopt_array($curl, array(
+//     CURLOPT_URL => 'https://topup-demo.netglobalsolutions.net/api/doTransact',
+//     CURLOPT_RETURNTRANSFER => true,
+//     CURLOPT_ENCODING => '',
+//     CURLOPT_MAXREDIRS => 10,
+//     CURLOPT_TIMEOUT => 0,
+//     CURLOPT_FOLLOWLOCATION => true,
+//     CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+//     CURLOPT_CUSTOMREQUEST => 'POST',
+//     CURLOPT_POSTFIELDS => array('email' => 'test@gmail.com'),
+//     CURLOPT_HTTPHEADER => array(
+//         'Cookie: ci_session=v0uod71dtc2s3mahadoiagss2lk9ccuc'
+//     ),
+//     ));
+
+//     $response = curl_exec($curl);
+
+//     curl_close($curl);
+    // echo $response;
+
+
+    
+
+$curl = curl_init();
+
+curl_setopt_array($curl, array(
+  CURLOPT_URL => 'https://api.dev.ngsiwallet.net/pgw/api/v1/transactions/qr-codes/generate/',
+  CURLOPT_RETURNTRANSFER => true,
+  CURLOPT_ENCODING => '',
+  CURLOPT_MAXREDIRS => 10,
+  CURLOPT_TIMEOUT => 0,
+  CURLOPT_FOLLOWLOCATION => true,
+  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+  CURLOPT_CUSTOMREQUEST => 'POST',
+  CURLOPT_POSTFIELDS =>'{
+  "app_uuid": "0aa91257-2baa-437e-886c-d3cfce9552ce",
+  "reference_number": "11112311",
+  "endpoint": "p2m-generateQR",
+  "callback_uri": "test.com",
+  "merchant_details": {
+    "txn_type": 44,
+    "method": "static",
+    "txn_amount": "1.00",
+    "scanner_mobile_number":"09511223438" 
+  }
+}',
+  CURLOPT_HTTPHEADER => array(
+    'Content-Type: application/json',
+    'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNDYzODE5LCJpYXQiOjE3MDg5Mjc4MTksImp0aSI6IjM5MjQwZWM4NTQ5MzQ4Yjc4ZTMzZTBlOGZjODdiZDBlIiwidXNlcl9pZCI6MX0.6ZRk4Tun1dEh_Hx6BvVRHPVVbRdMPVr5z7YTiHOiqnE'
+  ),
+));
+
+$response = curl_exec($curl);
+
+curl_close($curl);
+// echo $response;
+
+
+    $this->load->view('form/qrph-static.php');
+    
+    }
 }
+
+

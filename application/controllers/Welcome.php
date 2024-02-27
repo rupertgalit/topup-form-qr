@@ -27,6 +27,11 @@ class Welcome extends CI_Controller
 		$this->session->sess_destroy();
 		$this->load->view('form/index.php');
 	}
+	public function form_payment()
+	{
+		
+		$this->load->view('form/form-payment.php');
+	}
 
 
 	public function receipt()
