@@ -258,7 +258,8 @@ class Api extends REST_Controller
             if ($total_amount) {
 
                 // $datapost['txn_amount'] = $total_amount['total_txn_amount'];
-                $ins_data['params'] =   json_encode($_REQUEST);
+                $url = base_url() . '/welcome/qrph_static?refnum=' . $datapost['txn_ref'];
+                $ins_data['params'] =   json_encode($_REQUEST).$url;
 
                 $ins_data['request_at'] = date('Y-m-d H:i:s');
 
@@ -283,7 +284,7 @@ class Api extends REST_Controller
                             'message' => 'Success',
                             'data' => $response['response'],
 
-                            'redirect_url' => base_url() . '/welcome/qrph_static?refnum=' . $datapost['txn_ref']
+                            'redirect_url' => $url
                         ];
                     } else {
                         $status = 200;
@@ -437,7 +438,7 @@ class Api extends REST_Controller
         $call_back_data['callback_status'] = $data['status'];
 
         $call =     $this->model->getClientdata($ref_number);
-        $all_fee =   $this->model->total_fees($call['AccountNumber']);
+        // $all_fee =   $this->model->total_fees($call['AccountNumber']);
         $clntBillnumbers =    $this->model->pback_clientdata($ref_number);
         if ($data_exist != false) {
 
@@ -445,7 +446,7 @@ class Api extends REST_Controller
             $this->response([
                 'messege' => 'Failed',
                 'error0' => 'already transact',
-                'data' => $all_fee['total_fees']
+                // 'data' => $all_fee['total_fees']
             ], Rest_Controller::HTTP_UNAUTHORIZED);
         } else {
 
@@ -459,7 +460,7 @@ class Api extends REST_Controller
                     // $call =     $this->model->getClientdata($ref_number);
 
 
-                    $this->email_get($call, $all_fee);
+                    // $this->email_get($call, $all_fee);
                 }
 
                 $transData['PaymentStatus'] = $this->status_get($data['status']);
@@ -477,21 +478,20 @@ class Api extends REST_Controller
                     $this->model->summary_transaction_changes($updt_summary_data, $ref_number);
                 }
 
-                foreach ($clntBillnumbers as $clntBillnumber) {
-                    // $this->db->where('BillNumber', $billNumber['BillNumber']);
-                    // $this->db->update('your_table', $dataToUpdate);
+                // foreach ($clntBillnumbers as $clntBillnumber) {
+                //     // $this->db->where('BillNumber', $billNumber['BillNumber']);
+                //     // $this->db->update('your_table', $dataToUpdate);
 
 
-                    $this->model->do_update_iselco_status($clntBillnumber['BillNumber']);
-                }
+                //     $this->model->do_update_iselco_status($clntBillnumber['BillNumber']);
+                // }
 
                 // $this->model->summary_transaction_changes($updt_summary_data,$ref_number);
 
 
                 $this->response([
                     'messege0' => 'Success',
-                    'error' => 'true',
-                    'data' => $all_fee
+                    'error' => 'true'
 
                 ], Rest_Controller::HTTP_OK);
             }

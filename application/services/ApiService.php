@@ -102,9 +102,11 @@ return $resp;
     public function generate_qr_api( $data )
  {
      
-    // pgw/api/v1/transactions/qr-codes/generate/
+    // pgw/api/v1/transactions/qr-codes/generate/'Authorization: Bearer '. $generated_token['response'][ 'data' ][ 'token' ],
         $endpoint = $this->endpoint_base_url . '/pgw/api/v1/transactions/qr-codes/generate/';
         $generated_token = $this->generate_token();
+        // $token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNDYzODE5LCJpYXQiOjE3MDg5Mjc4MTksImp0aSI6IjM5MjQwZWM4NTQ5MzQ4Yjc4ZTMzZTBlOGZjODdiZDBlIiwidXNlcl9pZCI6MX0.6ZRk4Tun1dEh_Hx6BvVRHPVVbRdMPVr5z7YTiHOiqnE";
+        // $generated_token['status_code'] = 200;
         $dataToSend = $data;
         if($generated_token['status_code']==200 ||$generated_token['status_code']==201){
             $ch = curl_init();
@@ -112,6 +114,8 @@ return $resp;
             curl_setopt( $ch, CURLOPT_RETURNTRANSFER, true );
             curl_setopt( $ch, CURLOPT_SSL_VERIFYPEER, false );
             curl_setopt( $ch, CURLOPT_HTTPHEADER, [
+                
+                // 'Authorization: Bearer '. $token,
                 'Authorization: Bearer '. $generated_token['response'][ 'data' ][ 'token' ],
                 'Content-Type: application/json'
             ] );
@@ -132,7 +136,7 @@ return $resp;
         }else{
 
           
-            $resp[ 'response' ]=null;
+            $resp[ 'response' ]= $generated_token ;
             $resp[ 'status_code' ] = $generated_token['status_code'];
 
         }
